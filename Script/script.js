@@ -6,7 +6,7 @@ let herosIndex = 0;
 let villainsIndex = 0;
 let civilsIndex = 0;
 
-const imgSrc = "/assets/images/";
+const imgSrc = "/maghhUniverseWeb/assets/images/";
 const defaultMaleHeroImg = "defaultMaleHero";
 const defaultFemaleHeroImg = "defaultFemaleHero";
 const defaultMaleVillainImg = "defaultMaleVillain";
