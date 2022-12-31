@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maghh Universe</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/52f4839422.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Style/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Josefin+Sans&family=Lobster&family=Montserrat&family=Poppins&family=Righteous&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- JS Scripts -->
+    <script src="/Script/script.js" defer></script>
+    <!-- <script src="/Script/game.js"></script> -->
+    <!-- Fav icon -->
+    <link rel="icon" href="assets/space-ship.ico">
+</head>
+
+<body id="mainPage">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand">
+            <div class="container">
+                <a href="#" class="navbar-brand">Maghh Universe</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <p class="nav-link c-pointer" id="reset-btn"><i class="fa-solid fa-rotate"></i> Reset</p>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="contact-btn">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link c-pointer" id="about-btn">About</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-6">
+                    <div class="characterSection rounded-4 p-3 h-100 d-flex align-items-center" id="hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                                <img src="/assets/images/spiderman.png" class="img-fluid superHumanImg" id="hero-img" alt="">
+                            </div>
+                            <div class="col-lg-4 text-lg-start text-center" id="hero-info">
+                                <h3 id="hero-name">Hero name</h3>
+                                <h4 id="hero-age">Hero age</h4>
+                                <h4 id="hero-sex">Hero sex</h4>
+                                <h4 id="hero-power">Hero power</h4>
+                                <div class="progress" style="height: 22px;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="hero-health">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex flex-column gap-2">
+                                <div class="navBottoms d-flex justify-content-around mt-lg-0 mt-2">
+                                    <button class="btn btn-outline-dark rounded-circle" id="hero-prev-btn"><i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="btn btn-outline-dark rounded-circle" id="hero-next-btn"><i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <button class="btn btn-outline-dark" id="hero-attack-btn">Attack</button>
+                                <button class="btn btn-outline-dark" id="hero-heal-btn">Heal</button>
+                                <button class="btn btn-outline-dark" id="hero-protect-btn">Protect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="characterSection rounded-4 p-3 h-100 d-flex align-items-center" id="villain">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-4 mb-lg-0 mb-3">
+                                <img src="/assets/images/venom.png" class="img-fluid superHumanImg" id="villain-img" alt="">
+                            </div>
+                            <div class="col-lg-4 text-lg-start text-center" id="villain-info">
+                                <h3 id="villain-name">V name</h3>
+                                <h4 id="villain-age">Villain age</h4>
+                                <h4 id="villain-sex">Villain sex</h4>
+                                <h4 id="villain-power">Villain power</h4>
+                                <div class="progress" style="height: 22px;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="villain-health">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex flex-column gap-2">
+                                <div class="navBottoms d-flex justify-content-around mt-lg-0 mt-2">
+                                    <button class="btn btn-outline-dark rounded-circle" id="villain-prev-btn"><i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="btn btn-outline-dark rounded-circle" id="villain-next-btn"><i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <button class="btn btn-outline-dark" id="villain-attack-btn">Attack</button>
+                                <button class="btn btn-outline-dark" id="villain-changeTarget-btn">Change
+                                    target</button>
+                                <h4 class="text-center d-flex align-items-center justify-content-center gap-2"><i class="fa-solid fa-bullseye text-danger"></i><span id="villain-target"> none</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <div class="characterSection rounded-4 p-3 mb-lg-0 mb-3" id="civil">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-2 d-block d-lg-none">
+                                <button class="btn btn-outline-dark rounded-circle" id="civil-prev-btn-lg"><i
+                                        class="fa-solid fa-chevron-left"></i></button>
+                            </div>
+                            <div class="col-lg-3 col-3 civils d-flex flex-column gap-3 align-items-center">
+                                <div class="navBottoms d-lg-flex gap-4 d-none ">
+                                    <button class="btn btn-outline-dark rounded-circle" id="civil-prev-btn"><i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="btn btn-outline-dark rounded-circle" id="civil-next-btn"><i
+                                            class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <i class="fa-solid fa-user fa-7x order-lg-2 order-1"></i>
+                            </div>
+                            <div class="col-lg-2 col-5 text-lg-start text-center" id="civil-info">
+                                <h3 id="civil-name">Civil name</h3>
+                                <h4 id="civil-age">Civil age</h4>
+                                <h4 id="civil-sex">Civil sex</h4>
+                                <div id="civil-protector" class="d-none border border-dark rounded-4 mt-2 mb-2 ps-1 pe-1 pt-1 text-center"> <h4><i class="fa-solid fa-shield-cat text-dark"></i> <span id="civil-protector-name">none</span></h4></div>
+                                <div class="progress" id="civil-progress-bar" style="height: 22px; width: 100%;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="civil-health">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 d-block d-lg-none">
+                                <button class="btn btn-outline-dark rounded-circle" id="civil-next-btn-lg"><i
+                                        class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert d-none justify-content-between rounded-4" id="alert-warning">
+                <div class="alert-main d-flex flex-wrap gap-2">
+                    <div id="alert-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div class="fw-bold" id="alert-type"><h5>Type:</h4></div>
+                    <div><h5 id="alert-msg">Warning message here.</h5></div>
+                </div>
+                <div class="c-pointer" id="alert-exit-btn"><i class="fa-regular fa-circle-xmark"></i></div>
+            </div>
+            <div class="floatingButton btn btn-dark rounded-circle p-3" id="display-char-btn"><i class="fa-solid fa-plus fa-2x"></i></div>
+            <div class="addHumanForm rounded-4 bg-dark p-4 d-none" id="char-form">
+                <h5 class="hrText"><span class="bg-dark">Add character</span></h5>
+                <h5 class="d-none text-center pt-3 text-danger" id="Error-Msg">Error Message</h5>
+                <div class="humanType d-flex gap-2 justify-content-center p-3">
+                    <input class="form-check-input" type="radio" name="charTypeSelection" id="heroTypeSelection" value="Hero">
+                    <label class="form-check-label" for="heroTypeSelection">
+                        Hero
+                      </label>
+                      <input class="form-check-input" type="radio" name="charTypeSelection" id="villainTypeSelection" value="Villain">
+                      <label class="form-check-label" for="villainTypeSelection">
+                          Villain
+                        </label>
+                        <input class="form-check-input" type="radio" name="charTypeSelection" id="civilTypeSelection" value="Civil">
+                        <label class="form-check-label" for="civilTypeSelection">
+                            Civil
+                          </label>
+                </div>
+                <div class="dropdown text-center d-block" id="superHumanImgs">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-image"></i> <span id="imgSelectorButton">Select an image.</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex flex-wrap" id="img-dropdown-items">
+                            <li class="dropdown-item c-pointer" imgValue="spiderman">
+                                <img src="/assets/images/spiderman.png" class="img-fluid dropDownImg" imgValue="spiderman" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="batman">
+                                <img src="/assets/images/batman.png" class="img-fluid dropDownImg" imgValue="batman" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer">
+                                <img src="/assets/images/defaultFemaleHero.png" class="img-fluid dropDownImg" imgValue="defaultFemaleHero" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer">
+                                <img src="/assets/images/defaultMaleHero.png" class="img-fluid dropDownImg" imgValue="defaultMaleHero" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer">
+                                <img src="/assets/images/defaultFemaleVillain.png" class="img-fluid dropDownImg" imgValue="defaultFemaleVillain" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer">
+                                <img src="/assets/images/defaultMaleVillain.png" class="img-fluid dropDownImg" imgValue="defaultMaleVillain" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="joker">
+                                <img src="/assets/images/joker.png" class="img-fluid dropDownImg" imgValue="joker" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="venom">
+                                <img src="/assets/images/venom.png" class="img-fluid dropDownImg" imgValue="venom" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="Wolverine">
+                                <img src="/assets/images/Wolverine.png" class="img-fluid dropDownImg" imgValue="Wolverine" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="deadshot">
+                                <img src="/assets/images/deadshot.png" class="img-fluid dropDownImg" imgValue="deadshot" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="blackwidow">
+                                <img src="/assets/images/blackwidow.png" class="img-fluid dropDownImg" imgValue="blackwidow" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="Harleyquinn">
+                                <img src="/assets/images/Harleyquinn.png" class="img-fluid dropDownImg" imgValue="Harleyquinn" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="demon">
+                                <img src="/assets/images/demon.png" class="img-fluid dropDownImg" imgValue="demon" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="hotfairy">
+                                <img src="/assets/images/hotfairy.png" class="img-fluid dropDownImg" imgValue="hotfairy" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="thanos">
+                                <img src="/assets/images/thanos.png" class="img-fluid dropDownImg" imgValue="thanos" alt="">
+                            </li>
+                            <li class="dropdown-item c-pointer" imgValue="witch">
+                                <img src="/assets/images/witch.png" class="img-fluid dropDownImg" imgValue="witch" alt="">
+                            </li>
+                        </div>
+                    </ul>
+                  </div>
+                <label for="humanNameInput" class="form-label">Name</label>
+                <input type="text" class="form-control addCharForm" id="humanNameInput">
+                <label for="humanAgeInput" class="form-label">Age</label>
+                <input type="number" class="form-control addCharForm" id="humanAgeInput" min="1" max="1000">
+               <div class="humanGender d-flex gap-2 justify-content-center p-3">
+                <input class="form-check-input" type="radio" name="genderSelection" id="maleSelection" value="Male">
+                <label class="form-check-label" for="maleSelection">
+                    Male
+                  </label>
+                  <input class="form-check-input" type="radio" name="genderSelection" id="femaleSelection" value="Female">
+                  <label class="form-check-label" for="femaleSelection">
+                      Female
+                    </label>
+               </div>
+               <div class="d-block" id="superHumanPower">
+                <label for="humanPowerInput" class="form-label">Power</label>
+                <input type="text" class="form-control addCharForm" id="humanPowerInput">
+               </div>
+                <div class="formAction d-flex gap-2 justify-content-center pt-3">
+                    <div class="btn btn-secondary" id="add-char-btn">Add</div>
+                    <div class="btn btn-secondary" id="exit-char-btn">Cancel</div>
+                </div>
+            </div>
+            <div class="dialogWindow rounded-4 bg-dark p-4 d-none">
+                <div class="dialog-title d-flex justify-content-between align-items-center">
+                    <h5 id="dialogText-title">Title test</h5>
+                    <div class="c-pointer hover" id="dialog-exit-btn"><i class="fa-regular fa-circle-xmark"></i></div>
+                </div>
+                <div class="dialog-body p-3"></div>
+            </div>
+            <div class="d-none" id="overlay"></div>
+        </main>
+</body>
+
+</html>
