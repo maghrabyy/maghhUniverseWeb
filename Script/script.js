@@ -655,7 +655,7 @@ const onAddCharPressed = function () {
             updateVillainUI(villainsIndex);
         }
         else if (charTypeRadio[2].checked) {
-            createHuman(CIVIL_TYPE, inputtedHumanName, validateAge(), determineGenderSelection(), inputtedHumanPower);
+            createHuman(CIVIL_TYPE, null, inputtedHumanName, validateAge(), determineGenderSelection(), inputtedHumanPower);
             onExitDialogPressed();
             displayAlert("Character created.", ALERT_INFO);
             civilsIndex = civilsData.length - 1;
