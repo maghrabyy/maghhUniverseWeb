@@ -144,10 +144,6 @@ const createHuman = function (humanType, humanImg, humanName, humanAge, humanGen
 }
 
 
-for (const key in venomObj) {
-    console.log(`${key}: ${venomObj[key]}`)
-    console.log('-----------------------')
-}
 
 //Buttons
 const heroNextBtn = document.getElementById("hero-next-btn");
